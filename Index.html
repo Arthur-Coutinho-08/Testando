@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cidade Luz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+        
+            background-color: #100f0f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .section-content {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .price-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .price-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .price-item h3 {
+            font-size: 24px;
+            color: #333;
+        }
+        .price-item p {
+            font-size: 20px;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Boliche no Shopping Cidade Luz</h1>
+        <p>Divirta-se no nosso Boliche com amigos e família!</p>
+        <img src="images/shopping.jpg" alt="">
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#horarios">Horários</a>
+        <a href="#precos">Preços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="sobre">
+            <h2 class="section-title">Sobre o Boliche</h2>
+            <p class="section-content">
+                O nosso boliche oferece uma experiência incrível para todas as idades! Com pistas modernas, ambiente confortável e um ótimo atendimento, é o lugar perfeito para se divertir com amigos e familiares. Localizado no coração do shopping, nosso boliche é o espaço ideal para comemorações, festas de aniversário e lazer. Venha viver essa diversão!
+            </p>
+        </section>
+
+        <section id="horarios">
+            <h2 class="section-title">Horários de Funcionamento</h2>
+            <p class="section-content">
+                Estamos abertos todos os dias para você aproveitar! Confira nossos horários:
+            </p>
+            <ul class="section-content">
+                <li>Segunda a Sexta: 10:00 - 22:00</li>
+                <li>Sábado: 10:00 - 00:00</li>
+                <li>Domingo: 12:00 - 20:00</li>
+            </ul>
+        </section>
+
+        <section id="precos">
+            <h2 class="section-title">Preços</h2>
+            <p class="section-content">
+                Veja os preços para uma partida de boliche:
+            </p>
+            <div class="price-list">
+                <div class="price-item">
+                    <h3>Individual</h3>
+                    <p>R$ 30,00 / hora</p>
+                </div>
+                <div class="price-item">
+                    <h3>Dupla</h3>
+                    <p>R$ 50,00 / hora</p>
+                </div>
+                <div class="price-item">
+                    <h3>Grupos</h3>
+                    <p>R$ 90,00 / hora</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/400x300" alt="Boliche 1">
+                <img src="https://via.placeholder.com/400x300" alt="Boliche 2">
+                <img src="https://via.placeholder.com/400x300" alt="Boliche 3">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-title">Contato</h2>
+            <p class="section-content">
+                Para mais informações ou reservas, entre em contato conosco:
+            </p>
+            <p class="section-content">
+                Email: <a href="mailto:boliche@shopping.com">boliche@shopping.com</a><br>
+                Telefone: (11) 1234-5678
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Boliche no Shopping - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
